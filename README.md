@@ -16,7 +16,6 @@ https://www.python.org/ftp/python/3.7.2/python-3.7.2.exe
 ```shell
 git clone https://github.com/Lyss74/AboutsGoodsApp.git
 cd AboutsGoodsApp
-mkdir AboutGoodsApp
 pipenv install
 ```
 Cela va installè les packages nécessaires et lancer l'environnement virtuel en quelques minutes.
