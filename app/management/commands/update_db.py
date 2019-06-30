@@ -32,7 +32,7 @@ class Command(BaseCommand):
                 url=location['url'],
                 created=location['created']
             )
-            self.step('Locations [...]')
+            self.step('Locations[...]')
 
     def _save_episodes(self):
         """Saves episodes in the database."""
@@ -47,7 +47,7 @@ class Command(BaseCommand):
                 url=episode['url'],
                 created=episode['created']
             )
-            self.step('Episodes [...]')
+            self.step('Episodes[...]')
 
     def _save_characters(self):
         """Saves characters in the database."""
