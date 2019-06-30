@@ -28,8 +28,8 @@ class RickAndMortyAPI:
     @property
     def locations(self):
         """List of dictionaries representing locations from Rick & Morty."""
-        self.step('Locations.')
-        print('Linsertions dans la base de donnèes va débuter')
+        self.step('Locations[...]')
+        print("L'insertions dans la base de donnèes va débuter")
         return self._fetch(self.base_url + "location/")
 
     def _fetch(self, url):

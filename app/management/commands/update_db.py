@@ -16,8 +16,13 @@ class Command(BaseCommand):
         """Command entry point."""
         self.data = RickAndMortyAPI()
         self._save_locations()
+        self.step('Locations[...]')
         self._save_episodes()
+        self.step('Episodes[...]')
         self._save_characters()
+        self.step('Characters.')
+        print('Vous pouvez lancer le serveur Django.')
+
 
     def _save_locations(self):
         """Saves locations in the database."""
@@ -32,7 +37,6 @@ class Command(BaseCommand):
                 url=location['url'],
                 created=location['created']
             )
-            self.step('Locations[...]')
 
     def _save_episodes(self):
         """Saves episodes in the database."""
@@ -47,7 +51,6 @@ class Command(BaseCommand):
                 url=episode['url'],
                 created=episode['created']
             )
-            self.step('Episodes[...]')
 
     def _save_characters(self):
         """Saves characters in the database."""
@@ -67,8 +70,6 @@ class Command(BaseCommand):
                 created=character['created']
             )
             c.episodes.add(*[self.episodes[url] for url in character['episode']])
-            self.step('Characters.')
-            print('Vous pouvez lancer le serveur Django.')
 
     def step(self, name):
         print(f"The insert data {name} successful")
