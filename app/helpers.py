@@ -16,19 +16,19 @@ class RickAndMortyAPI:
     @property
     def characters(self):
         """List of dictionaries representing characters from Rick & Morty."""
-        self.step('Character [...]')
+        self.step('Characters[...]')
         return self._fetch(self.base_url + "character/")
 
     @property
     def episodes(self):
         """List of dictionaries representing episodes from Rick & Morty."""
-        self.step('Episodes [...]')
+        self.step('Episodes[...]')
         return self._fetch(self.base_url + "episode/")
 
     @property
     def locations(self):
         """List of dictionaries representing locations from Rick & Morty."""
-        self.step('Location.')
+        self.step('Locations.')
         print('Linsertions dans la base de donnèes va débuter')
         return self._fetch(self.base_url + "location/")
 

@@ -1,5 +1,6 @@
 .idea/*
 .app/migrations/0001_initial.py
+db.sqlite3
 db.sqlite3-journal
 desktop.ini
 .env
