@@ -1,0 +1,35 @@
+{% extends 'app/bases.html' %} <!--inheritance of the html structure-->
+{% load static %} <!--Load the static object" css, @font, pictures... "-->
+
+{% block content_header %}
+    <!--Display of the header of the html page-->
+    <div class="header_home">
+        <h4 class="title"><font face="verdana">Rick and Morty Fanatics universes</font></h4>
+    </div>
+{% endblock content_header %}
+
+{% block content_body %}
+    <!--Display of the body of the html page-->
+    <p>
+        <img src="{% static 'app/pictures/fun_2.png' %}" class="background" alt="Rick and Morty"/>
+    </p>
+    <div class="body_home">
+        <a href="{% url 'app:content' %}">
+            <p class='link'>
+                - En construction -</br>
+                - Consulter les planètes -
+            </p>
+        </a>
+        <a class="git_hub" href="https://github.com/Lyss74/AboutsGoodsApp">
+            - Consulter le Git hub -
+        </a>
+    </div>
+
+{% endblock content_body %}
+
+{% block content_footer %}
+    <!--Display of the foot of the html page-->
+    <div class="footer_home">
+        <h5>.: Created by | Lyss | Sulyvan Dercourt Concéption/Montage  HTML5 | CSS3 2019 © :.</h5>
+    </div>
+{% endblock content_footer %}

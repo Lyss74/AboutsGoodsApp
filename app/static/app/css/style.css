@@ -1,0 +1,156 @@
+/*********************************************CSS_CONFIGURATION****************************************/
+
+
+/********************STRUCTURE***********************/
+
+/*****Header*****/
+header {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	border-bottom: 0.156em double #363535;
+	border-image: linear-gradient(to right, #A4A4A4, #9C0202);
+	border-image-slice: 1;
+	margin-top: 3em;
+	margin-bottom: 6em;
+	height: auto;
+}
+
+.header_home {
+	display: flex;
+	margin: auto;
+}
+
+.title {  
+	font-size: 2.91rem;
+	font-family: sans-serif;
+	color: #A4A4A4;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*****Body*****/
+body {
+	background: radial-gradient(ellipse farthest-corner,
+	#333232, #353434 30em, #333232  50em, #353434);
+    height: auto;
+}
+
+.body_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(48, 42, 42, 0.486);
+	border: 0.156em double #b9b4b494;
+	height: 7em;
+	width: 20em;
+	margin: auto;
+	margin-bottom: 2em;
+}
+
+.body_content1 {
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(48, 42, 42, 0.486);
+	border: 0.156em double #b9b4b494;
+	height: 25em;
+	width: 22em;
+	margin: auto;
+}
+
+.body_home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(48, 42, 42, 0.486);
+	border: 0.156em double #b9b4b494;
+	width: 50em;
+	margin: auto;
+}
+
+.link {
+    text-decoration: none;
+	font-size: 2rem;
+	font-family: sans-serif;
+	color: #A4A4A4;
+	text-align: center;
+}
+
+.git_hub, .diagr {
+	font-size: 1.50rem;
+	font-family: sans-serif;
+	color: #A4A4A4;
+	text-align: center;
+}
+
+/*****Element of application*****/
+.planets {
+    margin: auto;
+}
+
+.text_appli {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 1.2em;
+	color: #A4A4A4;
+}
+
+/*****Footer***/
+footer  {
+	border-top: 0.156em double #202020;
+	border-image: linear-gradient(to left, #A4A4A4, #9C0202);
+	border-image-slice: 1;	
+	margin-right : 1em;	
+	margin-top: 3.5em;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 1.25em;
+	color: #A4A4A4;
+	width: 100%;
+}
+
+/**Pictures**/
+.background { 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-position: center;	
+	opacity: 0.6;
+}
+
+.body_ {
+	background-image: url('/app/static/app/pictures/fun_2.png');
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+	background-position: center;	
+	opacity: 0.6;
+
+}
+
+/****Font-face***/
+@font-face {
+	font-family: "Misfits";
+	src: url('MISFITS_.TTF');
+	font-size: 2.91rem;
+	font-family: sans-serif;
+	color: #A4A4A4;
+}
+  
+/*******KEYFRAME ANIMATION********/
+/*******KEYFRAME ANIMATION*****/
+
+/*********MEDIA-QUERY-STRUCTURE-SETTING***********/
+/**************MEDIA-QUERY-SETTING-END************/
+/********************STRUCTURE-END**********************/
+
+/*****************IN_INDEX.html*******************/
+/*****************INDEX.html-END******************/
+
+/*****************************************CSS_CONFIGURATION_END****************************************/

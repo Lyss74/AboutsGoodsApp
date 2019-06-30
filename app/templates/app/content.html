@@ -1,0 +1,57 @@
+{% extends 'app/bases.html' %} <!--inheritance of the html structure-->
+{% load static %} <!--Load the static object" css, @font, pictures... "-->
+
+
+{% block content_header %}
+    <!--Display of the header of the html page-->
+    <div class="header_home">
+        <h4 class="title"><font face="verdana">Rick and Morty Fanatics universes</font></h4>
+    </div>
+{% endblock content_header %}
+
+{% block content_body %}
+    <!--Display of the body of the html page-->
+    <p>
+        <img src="{% static 'app/pictures/fun_1.png' %}" class="background" alt="Rick and Morty"/>
+    </p>
+
+    <div class="body_content">
+        <div class="planets">
+            <p class="text_appli">
+                Choisir une planéte:
+            </p>
+            <select name="Planets">
+                <option selected>Choisissez une planéte dans la liste</option>
+                {% for location in planets %}
+                <option value="{{ location.name }}">{{ location.name }}</option>
+                {% endfor %}
+            </select>
+        </div>        
+    </div>
+
+    <div class="body_content1">
+        <div class="type_planet">
+            <p class="text_appli">
+                Trouver des planétes par son type:
+            </p>
+            {% for k, v in list_type_planet.items %}
+            <h4>{{ k }}</h4>
+            <select name="type">
+                <option selected>Liste des planetes associé</option>
+                {% for planet in v %}
+                <option value="1">{{ planet }}</option>
+                {% endfor %}
+            </select>
+            {% endfor %}
+        </div>
+    </div>
+
+
+{% endblock content_body %}
+
+{% block content_footer %}
+    <!--Display of the foot of the html page-->
+    <div class="footer_home">
+        <h5>.: Created by | Lyss | Sulyvan Dercourt Concéption/Montage  HTML5 | CSS3 2019 © :.</h5>
+    </div>
+{% endblock content_footer %}
