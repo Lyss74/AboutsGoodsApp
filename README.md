@@ -17,6 +17,7 @@ https://www.python.org/ftp/python/3.7.2/python-3.7.2.exe
 git clone https://github.com/Lyss74/AboutsGoodsApp.git
 cd AboutsGoodsApp
 pipenv install
+pipenv shell
 ```
 Cela va installè les packages nécessaires et lancer l'environnement virtuel en quelques minutes.
 
@@ -41,7 +42,7 @@ Vous pouvez dès à présent accéder à la page d'accueil de l'application.
 
 ## Liens :
 
-* Exercice de devellopement :
+* Exercice de développement :
 - Page d'accueil du projet : https://aboutgoods.github.io/TestsInterviewsDev/multiplateformDeveloper2019
 - Dépôt Git: https://github.com/Lyss74/AboutsGoodsApp
 
