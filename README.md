@@ -48,9 +48,9 @@ Vous pouvez dès à présent accéder à la page d'accueil de l'application.
 
 ## Fonctionnalités de l'application :
 
-*Naviguer à travers les planètes, découvrir ces personnages avec les épisodes associé à la série
-*Rechercher une planète spécifique juste par son 'type'
-*Afficher l'image d'une planète et afficher toutes ses informations
-*Afficher l'image d'un résident et afficher toutes ses informations
-*Pouvoir ajoutez une nouvelle planète, un résident
-*Choisir un résident puis pouvoir le sauvegarder par 'type', afin de facilité sa recherche
+* Naviguer à travers les planètes, découvrir ces personnages avec les épisodes associé à la série
+* Rechercher une planète spécifique juste par son 'type'
+* Afficher l'image d'une planète et afficher toutes ses informations
+* Afficher l'image d'un résident et afficher toutes ses informations
+* Pouvoir ajoutez une nouvelle planète, un résident
+* Choisir un résident puis pouvoir le sauvegarder par 'type', afin de facilité sa recherche
